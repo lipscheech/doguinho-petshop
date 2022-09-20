@@ -6,7 +6,7 @@ onde foi utilizado um banco de dados fake apenas para demonstração do CRUD.
 
 ## Depêndencias
 
-Para executar o projeto, é necessário ter instalado o nodeJS, onde será necessário o json-server e opcionalmente o browser-sync.
+Para executar o projeto, é necessário ter instalado o nodeJS, que por sua vez possibilitará instar o json-server necessário para execução e opcionalmente o browser-sync.
 
 Tendo já instalado o nodeJS, execute:
 
