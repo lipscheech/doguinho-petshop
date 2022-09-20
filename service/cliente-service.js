@@ -29,8 +29,18 @@ const detalhaCliente = (id) => {
         .then( response => response.json() )
 }
 
-const atualizaCliente = (id) => {
-
+const atualizaCliente = (id, nome, email) => {
+    return fetch(`http://localhost:3000/profile/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            email: email
+        })
+    })
+    .then( response => response.json());
 }
 
 export const clienteService = {
