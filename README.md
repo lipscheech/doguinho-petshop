@@ -1,6 +1,6 @@
 # Doguinho petshop
 
-Este projeto foi desenvolvido no curso **JS na WEB: CRUD com javascript assincrono.** da alura.
+Este projeto foi desenvolvido no curso **JS na WEB: CRUD com javascript assincrono** da alura.
 
 onde foi utilizado um banco de dados fake apenas para demonstração do CRUD.
 
