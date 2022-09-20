@@ -22,7 +22,7 @@ Para instalar o json-server, execute:
 npm i -g json-server
 ```
 
-caso queira instalar globalmente. Caso queira instalar apenas este projeto, execute na pasta do projeto o seguinte comando:
+caso queira instalar globalmente. Caso queira instalar apenas para este projeto, execute na pasta principal o seguinte comando:
 
 ```js
 npm i json-server
@@ -44,7 +44,7 @@ Lembrando que o browser-sync não é necessário, caso tenha a extensão do live
 
 ## Executando o código
 
-Para executar o código desenvolvido, abra a pasta no seu editor de preferência, no meu caso eu utilizei o vscode. No terminal, pasta do projeto, digite o seguinte comando para rodar o json server:
+Para executar o código desenvolvido, abra a pasta no seu editor de preferência, no meu caso eu utilizei o vscode. No terminal, abra a pasta do projeto e digite o seguinte comando para rodar o json server:
 
 ```js
 json-server --watch db.json
