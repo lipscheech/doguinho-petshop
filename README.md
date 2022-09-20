@@ -8,21 +8,21 @@ onde foi utilizado um banco de dados fake apenas para demonstração do CRUD.
 
 Para executar o projeto, é necessário ter instalado o nodeJS, que por sua vez possibilitará instalar o json-server, necessário para execução. E opcionalmente o browser-sync.
 
-Tendo já instalado o nodeJS, execute o seguinte comando na pasta do projeto:
+Tendo já instalado o nodeJS, insira o seguinte comando pelo terminal na pasta do projeto:
 
 ```js
 npm i
 ```
 
-para poder instalar todas a dependências necessárias para executar o código.
+para poder instalar todas as dependências necessárias para executar o código.
 
-Para instalar o json-server, basta abrir seu terminal e execute:
+Para instalar o json-server, execute:
 
 ```js
 npm i -g json-server
 ```
 
-caso queira instalar globalmente. Caso queira instalar apenas para executar este projeto, execute:
+caso queira instalar globalmente. Caso queira instalar apenas este projeto, execute na pasta do projeto o seguinte comando:
 
 ```js
 npm i json-server
@@ -44,13 +44,13 @@ Lembrando que o browser-sync não é necessário, caso tenha a extensão do live
 
 ## Executando o código
 
-Para executar o código desenvolvido, abra a pasta no seu editor de preferência, no meu caso eu utilizei o vscode. No terminal digite o seguinte comando para rodar o json server:
+Para executar o código desenvolvido, abra a pasta no seu editor de preferência, no meu caso eu utilizei o vscode. No terminal, pasta do projeto, digite o seguinte comando para rodar o json server:
 
 ```js
 json-server --watch db.json
 ```
 
-ou o live server no vscode.
+para gerar um servidor com o banco de dados.
 
 Caso não vá utilizar o live server, execute então:
 
