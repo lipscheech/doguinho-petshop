@@ -28,9 +28,15 @@ tabela.addEventListener('click', async (event) => {
     let botaoEditar = event.target.className === 'botao-simples botao-simples--editar';
 
     if (botaoDeletar) {
-        const linhaCLiente = event.target.closest('[data-id]')
-        await clienteService.removeCliente(linhaCLiente.dataset.id)
-        linhaCLiente.remove();
+        try {
+            const linhaCLiente = event.target.closest('[data-id]')
+            await clienteService.removeCliente(linhaCLiente.dataset.id)
+            linhaCLiente.remove();
+        }
+        catch (error) {
+            console.log(error);
+            window.location.href = '../telas/erro.html';
+        }
     }
 
     if (botaoEditar) {
@@ -41,9 +47,14 @@ tabela.addEventListener('click', async (event) => {
 
 })
 const render = async () => {
-
-    const dados = await clienteService.listaClientes()
-    dados.forEach(elemento => tabela.appendChild(criaNovaLinha(elemento.nome, elemento.email, elemento.id)))
+    try {
+        const dados = await clienteService.listaClientes()
+        dados.forEach(elemento => tabela.appendChild(criaNovaLinha(elemento.nome, elemento.email, elemento.id)))
+    }
+    catch (error) {
+        console.log(error);
+        window.location.href = '../telas/erro.html';
+    }
 }
 
 render();
