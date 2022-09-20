@@ -6,15 +6,23 @@ onde foi utilizado um banco de dados fake apenas para demonstração do CRUD.
 
 ## Depêndencias
 
-Para executar o projeto, é necessário ter instalado o nodeJS, onde será necessário o json-server e o browser-sync.
+Para executar o projeto, é necessário ter instalado o nodeJS, onde será necessário o json-server e opcionalmente o browser-sync.
 
-Para instalar o json-server, basta abrir seu terminal, já havendo o nodeJS instalado, e execute:
+Tendo já instalado o nodeJS, execute:
+
+```js
+npm i
+```
+
+para poder instalar todas a dependências necessárias para executar o código.
+
+Para instalar o json-server, basta abrir seu terminal e execute:
 
 ```js
 npm i -g json-server
 ```
 
-caso queira instalar globalmente, caso queira instalar apenas para executar este projeto, execute:
+caso queira instalar globalmente. Caso queira instalar apenas para executar este projeto, execute:
 
 ```js
 npm i json-server
